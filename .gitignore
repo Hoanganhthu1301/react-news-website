@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+news-server/node_modules/
+news-website/node_modules/
+
+news-server/.env
+news-website/.env
+
+news-website/dist/
