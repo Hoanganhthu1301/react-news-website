@@ -1,0 +1,112 @@
+.siteHeader {
+  background: #fff;
+}
+
+.topHeaderBlock {
+  position: relative;
+  z-index: 1;
+}
+
+.logoWrap {
+  border-bottom: 1px solid #8d8d8d;
+  padding: 14px 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.siteLogoImage {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.navSticky {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  background: #fff;
+}
+
+.navStickyInner {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 10px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navStickyInner::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start; /* quan trọng */
+  align-items: center;
+  gap: 18px;
+  min-height: 40px;
+  white-space: nowrap;
+  width: max-content;
+  min-width: max-content;
+  border-bottom: 1px solid #8d8d8d;
+  background: #fff;
+  padding-right: 10px;
+}
+
+.nav button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  color: #222;
+  transition: color 0.2s ease;
+  flex: 0 0 auto;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.nav button:hover,
+.active {
+  color: #d84c4c;
+}
+
+@media (min-width: 769px) {
+  .logoWrap {
+    padding: 18px 0 16px;
+  }
+
+  .siteLogoImage {
+    width: 350px;
+  }
+
+  .navStickyInner {
+    padding: 0 12px;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 34px;
+    min-height: 52px;
+    min-width: 100%;
+    width: max-content;
+  }
+
+  .nav button {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

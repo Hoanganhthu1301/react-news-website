@@ -1,0 +1,76 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  z-index: 1400;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 70px 20px 20px;
+}
+
+.panel {
+  width: 100%;
+  max-width: 760px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header button {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0 16px;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+.results {
+  display: grid;
+  gap: 12px;
+}
+
+.resultItem {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.resultItem img {
+  width: 90px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.resultTitle {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.resultSource {
+  color: #666;
+  font-size: 13px;
+}
+
+.empty {
+  color: #666;
+}
